@@ -14,26 +14,7 @@
 	<script type="text/javascript" src="http://www.google.com/jsapi">
 	</script>
 
-	<script type="text/javascript">
-	google.load("feeds", "1");
-	function initialize() {
-	      var feed = new google.feeds.Feed("http://decipherdata.blogspot.com/feeds/posts/default?alt=rss");
-	      feed.load(function(result) {
-	        if (!result.error) {
-	          var container = document.getElementById("feed");
-			  container.innerHTML += "<p><h4>Latest DecipherData Blog Posts</h4><ul>";
-			  <!-- result.feed.entries.length -->
-	          for (var i = 0; i < result.feed.entries.length; i++) {
-	            var entry = result.feed.entries[i];
-				container.innerHTML += "<li>" + "<a href='" + entry.link + "'>" + entry.title + "</a>"+ "<br>" + entry.contentSnippet + " " + "<a href='" + entry.link + "'>" + "more" + "</a>"+  "</li> <br>"
-	          }
-			  container.innerHTML += "</ul></p>";
-	        }
-	      });
-	    }
-	    google.setOnLoadCallback(initialize);
 
-	</script>
 
 	<!--[if IE 6]>
 	<script src="js/DD_belatedPNG_0.0.8a-min.js"></script>
@@ -71,8 +52,8 @@
 			<!-- Who am I? -->
 			<h4 class="page_title">Who am I?</h4>
 
-			<p><a href="http://blackbird.ai">Entrepreneur</a>, Computer Scientist, <a href="https://scholar.google.com/citations?user=l6oHPNsAAAAJ&hl=en">Researcher</a>, <a href="http://instagram.com/naushadzaman/">Amateur Photographer</a>, <a href="http://www.cs.rochester.edu">U Rochester Alum</a>, <a href="http://www.bracu.ac.bd">BRAC U Alum</a>, <a href="http://en.wikipedia.org/wiki/Faujdarhat_Cadet_College">Ex-Cadet (Ex-Faujian)</a>, <br>
-			and also a <a href="http://naushaduzzaman.blogspot.com/search/label/food">food lover</a>, <a href="http://en.wikipedia.org/wiki/Bangladesh_national_cricket_team">Bangladesh Cricket</a> fan, an Apple user (since 2004), a son/brother (since 1983) and a husband (since 2012).
+			<p><a href="http://blackbird.ai">Entrepreneur</a>, Computer Scientist, <a href="https://scholar.google.com/citations?user=l6oHPNsAAAAJ&hl=en">Researcher</a>, <a href="http://instagram.com/naushadzaman/">Amateur Photographer</a>, <a href="http://www.cs.rochester.edu">U Rochester Alum</a>, <a href="http://www.bracu.ac.bd">BRAC U Alum</a>, <a href="http://en.wikipedia.org/wiki/Faujdarhat_Cadet_College">Ex-Cadet (Ex-Faujian)</a>, 
+			and also a <a href="http://naushaduzzaman.blogspot.com/search/label/food">food lover</a>, a <a href="http://en.wikipedia.org/wiki/Bangladesh_national_cricket_team">Bangladesh Cricket</a> fan, a <a href="https://www.fcbarcelona.com/en/">FC Barcelona</a> fan, an Apple user (since 2004), a son/brother (since 1983) and a husband (since 2012).
 			</p>
 
 			<div class="hr grid_9 clearfix">&nbsp;</div>
@@ -143,9 +124,7 @@
 			<h4 class="page_title">Featured News</h4>
 			<p>
 				<ul>
-					<li>June, 2018. Withholding efforts at <a href="http://www.coining.ai">Coining.AI</a> and focusing 100% on <a href="http://www.socialtrendly.com">SocialTrendly</a>, now <a href="http://www.blackbird.ai">Blackbird.ai</a>, which is building a real-time misinformation analysis platform using A.I, blockchain and crowdsourcing to help create a more informed and empowered society.</li>
-					<br>
-					<li>January, 2018. Founded <a href="http://www.coining.ai">Coining.AI</a> - a company for Artificial Intelligence driven Crypto-currency tools. Follow us for the exciting news in coming days: <a href="http://twitter.com/coiningai">Twitter</a>, <a href="https://medium.com/@coiningai">Blog</a>.</li>
+					<li>June, 2018. Pivoting at <a href="http://www.socialtrendly.com">SocialTrendly</a>, now <a href="http://www.blackbird.ai">Blackbird.ai</a>, to build a real-time misinformation analysis platform using A.I, blockchain and crowdsourcing to help create a more informed and empowered society.</li>
 					<br>
 					<li>May, 2015. Won the 1st IBM Watson Hackathon. Check the news in <a href="https://developer.ibm.com/watson/blog/2015/05/07/ibm-watson-hackathon-winners-announced/">IBM blog</a>.</li><br><li>February, 2014. Co-Founded <a href="http://www.socialtrendly.com">SocialTrendly</a>. Become a fan of our <a href="https://www.facebook.com/pages/SocialTrendly/761762960551186">Facebook page</a> and keep updated about what's coming!</li>
 					<br>
@@ -292,28 +271,24 @@
 
 			<div class="grid_9">
 
-				<a class="portfolio_item float alpha" href="http://coining.ai">
-					<span>CEO/Founder of Coining.AI</span>
-					<img class="" src="images/badge/badge-coiningai.jpg"  alt=""/>
-				</a>
 
-				<a class="portfolio_item float " href="https://research.nuance.com/author/naushad-uzzaman/">
+				<a class="portfolio_item float alpha" href="https://research.nuance.com/author/naushad-uzzaman/">
 					<span>Sr. Research Scientist at Nuance Communications (July 2012 - September 2019)</span>
 					<img class="" src="images/badge/badge-nuance.jpg"  alt=""/>
 				</a>
 
 
-				<a class="portfolio_item float omega" href="http://research.yahoo.com">
+				<a class="portfolio_item float " href="http://research.yahoo.com">
 					<span>Research Intern at Yahoo! Research, Barcelona (Summer 2011)</span>
 					<img class="" src="images/badge/badge-yahoo.jpg"  alt=""/>
 				</a>
 
-				<a class="portfolio_item float alpha" href="http://research.microsoft.com/en-us/jobs/intern/medicalmedia.aspx">
+				<a class="portfolio_item float omega" href="http://research.microsoft.com/en-us/jobs/intern/medicalmedia.aspx">
 					<span>Research Intern at Microsoft Medical Media Lab (Summer 2009)</span>
 					<img class="" src="images/badge/badge-microsoft.jpg"  alt=""/>
 				</a>
 
-				<a class="portfolio_item float " href="http://www.bosch.us/content/language1/html/rtc.htm">
+				<a class="portfolio_item float alpha" href="http://www.bosch.us/content/language1/html/rtc.htm">
 					<span>Research Intern at Bosch Research and Technology Center (Bosch RTC) (Summer 2008)</span>
 					<img class="" src="images/badge/badge-bosch.jpg"  alt=""/>
 				</a>
